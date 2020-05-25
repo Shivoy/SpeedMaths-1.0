@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maths-SpeedSheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mathsheet" id="mathsheet">
+            <!--#### Game Controls ####-->
+            <div class="row">
+                <button onclick="startGame()">Start</button>
+                <button onclick="pauseGame()" id="pause_play">Pause</button>
+                <div class="timer" id="stopWatch">Time(0:0)</div>
+            </div>
+            <div class="row">
+                <button onclick="submit()">Submit</button>
+                <button onclick="reset()">Reset</button>
+                <div class="scoreBox" id="answer">Answer</div>
+                <div class="scoreBox" id="score">Score()</div>
+                <div class="scoreBox" id="accu">Accu()</div>
+            </div>
+
+            <!--#### Game Board #### -->
+            <table id="baseTable">
+                <!--row-1-->
+                <tr>
+                    <td class="box"><b>Numbers</b></td>
+                    <td class="box" id="num-01">Num-1</td>
+                    <td class="box" id="num-02">Num-2</td>
+                    <td class="box" id="num-03">Num-3</td>
+                    <td class="box"><b>Sum</b></td>
+                </tr>
+                <!--row-2-->
+                <tr>
+                    <td class="box" id="num-10">Num-1</td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-11">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-12">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-13">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="rowSum-1">
+                    </td>
+                </tr>
+                <!--row-3-->
+                <tr>
+                    <td class="box" id="num-20">Num-2</td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-21">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-22">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-23">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="rowSum-2">
+                    </td>
+                </tr>
+                <!--row-4-->
+                <tr>
+                    <td class="box" id="num-30">Num-3</td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-31">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-32">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="prod-33">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="rowSum-3">
+                    </td>
+                </tr>
+                <!--row-5-->
+                <tr>
+                    <td class="box"><b>Sum</b></td>
+                    <td class="box">
+                        <input class="box" type="text" id="colSum-1"></td>
+                    <td class="box">
+                        <input class="box" type="text" id="colSum-2">
+                    </td>
+                    <td class="box">
+                        <input class="box" type="text" id="colSum-3"></td>
+                    <td class="box">
+                        <input class="box" type="text" id="totalSum"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

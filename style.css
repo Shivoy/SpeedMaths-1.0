@@ -1,0 +1,78 @@
+/*#### defaults ####*/
+button
+    {
+    background-color: lawngreen;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+}
+
+table {
+    display: block;
+    height: 250px;
+    width: 600px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.row {
+    height: 30px;
+    width: 600px;
+}
+
+td > .box {
+    width: 60px;
+    height: 25px;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+
+.box,
+.rightBox,
+.wrongBox,
+.emptyBox {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: darkgray;
+}
+
+.timer {
+    width: 245px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    float: right;
+    text-align: center;
+    background-color: dimgray;
+
+}
+
+.scoreBox{
+    width: 75px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    float: right;
+    text-align: center;
+    background-color: dimgray;
+}
+.rightBox {
+    background-color: green;
+}
+
+.wrongBox {
+    background-color: red;
+}
+
+.emptyBox {
+    background-color: yellow;
+}
